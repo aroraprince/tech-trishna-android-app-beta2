@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="College"
+            android:textColor="#372c24" />
+
+        <Spinner
+            android:id="@+id/collge_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_StudentNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Number"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/reg_StudentNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:maxLength="8"
+            android:singleLine="true" />
+        
+        <TextView
+             android:id="@+id/textview_OtherCollege"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="College Name"
+            android:textColor="#372c24"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/reg_OtherCollege"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/reg_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:inputType="textPersonName"
+            android:hint="Mark Jacobs"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/reg_Email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:inputType="textEmailAddress"
+            android:hint="someone@example.com"
+            android:singleLine="true" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/reg_ContactNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="9999999999"
+            android:singleLine="true" />
+        
+
+        <TextView
+            android:id="@+id/textview_PartnerId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Partner ID"
+            android:textColor="#372c24"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/reg_PartnerId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:maxLength="6"
+            android:hint="TT0001"
+            android:visibility="gone"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/reg_Password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:inputType="textPassword"
+            android:hint="********"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textColor="#372c24" />
+
+        <EditText
+            android:id="@+id/reg_ConfirmPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:inputType="textPassword"
+            android:hint="********"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#372c24" />
+
+        <RadioGroup
+            android:id="@+id/reg_GenderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/RadioButtonMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/RadioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+		
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:textColor="#372c24" />
+        
+        <Spinner
+            android:id="@+id/branch_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textColor="#372c24" />
+
+        <Spinner
+            android:id="@+id/year_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/reg_checkBox_TShirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Want a cool TechTrishna T-Shirt" />
+
+        <CheckBox
+            android:id="@+id/reg_checkBox_Accomodation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I need Accomodation"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/reg_Button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Register New Account" />
+    </LinearLayout>
+
+</ScrollView>

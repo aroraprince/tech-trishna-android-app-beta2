@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/expandable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/eventListItem"
+        style="@style/hTextBoxStyle"
+        android:textColor="#ffffff"
+        android:background="#42B4E6"
+        />
+
+</LinearLayout>

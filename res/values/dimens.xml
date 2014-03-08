@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- The text sizes for varous textviews -->
+    <dimen name="header_text">25sp</dimen>
+    <dimen name="body_text">15sp</dimen>
+
+    <!-- The dimensions for the padding of the views in the fragments -->
+    <dimen name="padding">10dp</dimen>
+
+    <!-- the height and width of the imageviews used -->
+    <dimen name="image">80dp</dimen>
+
+    <!-- the height and width of the lines drawn -->
+    <dimen name="line">1dp</dimen>
+
+    <!-- Dialog Fragment dimensions -->
+    <dimen name="dialog_width">360dp</dimen>
+    <dimen name="dialog_height">240dp</dimen>
+    <dimen name="title_height">60dp</dimen>
+    <dimen name="body_height">120dp</dimen>
+    <dimen name="nbutton_width">140dp</dimen>
+    <dimen name="pbutton_width">220dp</dimen>
+
+</resources>

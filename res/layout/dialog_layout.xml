@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="@dimen/dialog_height"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#42B4E6"
+        android:text="@string/hello"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/dBody"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/body_height"
+        android:background="#ffffff"
+        android:text="@string/hello"
+        android:textColor="#42B4E6" />
+
+    <View 
+        style="@style/hLine"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/nButton"
+            android:layout_width="@dimen/nbutton_width"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:text="@string/hello"
+            android:textColor="#42B4E6" />
+	
+        <View 
+            style="@style/vLine"/>
+        
+        <Button
+            android:id="@+id/pButton"
+            android:layout_width="@dimen/pbutton_width"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:text="@string/hello_world"
+            android:textColor="#42B4E6" />
+    </LinearLayout>
+
+</LinearLayout>
