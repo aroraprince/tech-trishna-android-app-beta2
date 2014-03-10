@@ -21,6 +21,8 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class QueryFragment extends Fragment {
@@ -33,12 +35,13 @@ public class QueryFragment extends Fragment {
 	private String message;
 	private String emailText;
 	private String queryText;
+	private String queryTag;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		final View rootView = inflater.inflate(R.layout.query_layout, container,
-				false);
+		final View rootView = inflater.inflate(R.layout.query_layout,
+				container, false);
 		getActivity().setTitle("QUERY US"); // set the title of the fragment
 		Button submitButton = (Button) rootView.findViewById(R.id.queryButton);
 		submitButton.setOnClickListener(new OnClickListener() {
@@ -48,8 +51,15 @@ public class QueryFragment extends Fragment {
 						.findViewById(R.id.emailText);
 				EditText queryEditText = (EditText) rootView
 						.findViewById(R.id.queryText);
+				RadioGroup queryRadioGroup = (RadioGroup) rootView
+						.findViewById(R.id.radioQuery);
+				int selectedId = queryRadioGroup.getCheckedRadioButtonId();
+				RadioButton queryRadioButton = (RadioButton) rootView
+						.findViewById(selectedId);
+				queryTag = queryRadioButton.getTag().toString();
 				emailText = emailEditText.getText().toString().trim();
 				queryText = queryEditText.getText().toString().trim();
+				Log.d("queryTag",queryTag);
 				new SubmitQuery().execute();
 			}
 		});
@@ -76,10 +86,11 @@ public class QueryFragment extends Fragment {
 			List<NameValuePair> args = new ArrayList<NameValuePair>();
 			args.add(new BasicNameValuePair("email", emailText));
 			args.add(new BasicNameValuePair("query", queryText));
+			args.add(new BasicNameValuePair("tag", queryTag));
 			// add the JSON object
 			JSONObject json = jsonParser.makeHttpRequest(queyUrl, "POST", args);
 			try {
-				Log.d("tag",json.toString());
+				Log.d("tag", json.toString());
 				message = json.getString(TAG_MESSAGE);
 			} catch (JSONException e) {
 				e.printStackTrace();
