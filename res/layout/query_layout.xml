@@ -19,13 +19,57 @@
         android:hint="@string/query"
         android:text="" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="@string/queryText"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioQuery"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:tag="1"
+            android:text="@string/queryWeb" />
+
+        <RadioButton
+            android:id="@+id/radioOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="2"
+            android:text="@string/queryOnline" />
+
+        <RadioButton
+            android:id="@+id/radioOnsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:tag="3"
+            android:text="@string/queryOnsite" />
+
+        <RadioButton
+            android:id="@+id/radioOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="4"
+            android:text="@string/queryOther" />
+    </RadioGroup>
+
     <Button
         android:id="@+id/queryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:background="#42B4E6"
-        android:textColor="#ffffff"
-        android:text="@string/submit" />
+        android:text="@string/submit"
+        android:textColor="#ffffff" />
 
 </LinearLayout>
