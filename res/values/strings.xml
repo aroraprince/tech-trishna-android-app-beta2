@@ -14,8 +14,8 @@
     <string name="queryText">My query is</string>
     <string name="queryWeb">related to the app or the website</string>
     <string name="queryOnline">related to the online events</string>
-    <string name="queryOnsite">is related to onsite events</string>
-    <string name="queryOther">is of a different topic</string>
+    <string name="queryOnsite">related to onsite events</string>
+    <string name="queryOther">of a different topic</string>
     
 
     <!-- string array to store list items -->
