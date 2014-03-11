@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
-    android:layout_height="210dp"
+    android:layout_width="360dp"
+    android:layout_height="250dp"
     android:background="#ffffff"
     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/aHead"
         android:layout_width="match_parent"
-        android:layout_height="53dp"
+        android:layout_height="63dp"
         android:background="#42B4E6"
         android:text="@string/hello"
         android:textSize="25sp"
@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/aBody"
         android:layout_width="match_parent"
-        android:layout_height="105dp"
+        android:layout_height="125dp"
         android:background="#ffffff"
         android:text="@string/hello"
         android:textSize="20sp"
@@ -28,7 +28,7 @@
     <Button
         android:id="@+id/aButton"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="62dp"
         android:background="#ffffff"
         android:text="@string/hello"
         android:textSize="25sp"

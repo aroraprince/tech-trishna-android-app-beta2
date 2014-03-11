@@ -9,8 +9,6 @@ import in.silive.techtrishnabeta2.network.GPSTracker;
 
 import java.util.ArrayList;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -57,8 +55,7 @@ public class MainActivity extends ActionBarActivity {
 				.isGooglePlayServicesAvailable(getApplicationContext());
 		// launch the dialog box if the connection is there
 		if (!connection.isInternetConnected()) {
-			dialogBox = new DialogBox(this, Settings.ACTION_SETTINGS,
-					null, 0);
+			dialogBox = new DialogBox(this, Settings.ACTION_SETTINGS, null, 0);
 			dialogBox.setTitle("NO INTERNET CONNECTION");
 			dialogBox
 					.setBody("It seems that you do not have a net connection. All features of the app will be unavailable if you do not have a net connection.");
@@ -171,13 +168,12 @@ public class MainActivity extends ActionBarActivity {
 			break;
 		case 4:
 			if (status != ConnectionResult.SUCCESS) {
-				DialogBox dialogBox = new DialogBox(this, Intent.ACTION_VIEW,
-						Uri.parse("market://details?"), 0);
-				dialogBox.setTitle("GooglePlay not installed");
+				DialogBox dialogBox = new DialogBox(this);
+				dialogBox.setTitle("Google Play Services not installed");
 				dialogBox
-						.setBody("the google play services are not installed on your phone it seems your app will crash if you open navigation without installing google play services. Kindly install it");
-				dialogBox.setButtonText("GOTO PLAY STORE");
-				dialogBox.onCreateDialogBox();
+						.setBody("It seems the google play services are not installed on your phone. To access the navigation feature you must install it");
+				dialogBox.setButtonText("Cancel");
+				dialogBox.onCreateAlertBox();
 			} else {
 				boolean locStatus = new GPSTracker(this).canGetLocation();
 				if (!locStatus) {
